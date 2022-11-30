@@ -89,7 +89,7 @@ const strNums = ["1","4","1","5","9","2","6","5","3","5","8","9","7","9","3","2"
 
   //find the id of the object in weather that has a min_temp of 15.915
 
-  const idealTemp = weather.map(temp => temp.min_temp)
-    .filter(temp => temp === 15.915);
+  const idealTemp = weather.filter(temp => temp.min_temp === 15.915)
+  .map(object => object.id);
   console.log(idealTemp)
 
